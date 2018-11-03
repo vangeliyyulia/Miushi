@@ -1,0 +1,77 @@
+.header {
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.logo {
+    width: 19rem;
+    height: 6.9rem;
+}
+
+.contacts {
+    width: 22%;
+    font-family: "OpenSans-SemiBold";
+    font-size: 1.3rem;
+    line-height: 1;
+    color: #000;
+    padding-left: 1.6rem;
+    position: relative;
+
+    &::before {
+        @include pseudo;
+        width: 1.1rem;
+        height: 1.6rem;
+        top: -.1rem;
+        left: 0; 
+    }
+
+    &--address::before {
+        background: url(../img/icons/maps-and-flags.svg) no-repeat center center;
+    }
+
+    &--mail {
+        text-decoration: none;
+
+        &::before {
+            background: url(../img/icons/envelope.svg) no-repeat center center;
+        }
+    }
+}
+
+.phone {
+    width: 17%;
+    color: #000;
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    &__figures {
+        font-family: "OpenSans-Bold";
+        font-size: 1.8rem;
+        line-height: 1.2;
+    }
+
+    &__text {
+        font-family: "OpenSans-Regular";
+        font-size: 1rem;
+        line-height: 1;
+    }
+}
+
+.callback {
+    width: 17.1rem;
+    padding: 1.5rem 2rem;
+    background-color: transparent;
+    border: 1px solid $green;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-family: "OpenSans-Regular";
+    font-size: 1.3rem;
+    color: $green;
+    cursor: pointer;
+}
