@@ -21,3 +21,13 @@
     display: block;
     position: absolute;
 }
+
+@mixin center-top {
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@mixin left-center {
+    left: 50%;
+    transform: translateX(-50%);
+}
