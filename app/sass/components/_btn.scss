@@ -1,3 +1,21 @@
+.btn {
+	background-color: $orange;
+	padding: 1.8rem 2rem;
+	color: #fff;
+	text-transform: uppercase;
+	font-family: "OpenSans-Regular";
+	font-size: 1.6rem;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	text-decoration: none;
+	border-radius: 5px;
+
+	&--slider {
+		width: 24.6rem;
+	}
+}
+
 /* Menu button */
 .btn_mnu {
 	width: 50px;
