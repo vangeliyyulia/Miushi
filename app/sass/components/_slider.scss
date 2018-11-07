@@ -1,4 +1,4 @@
-.slider{
+.slider {
     &__item {
         background-position: center top;
         background-size: cover;
@@ -20,6 +20,11 @@
         font-size: 11rem;
         line-height: .9;
         margin-bottom: 5.5rem;
+
+        @include respond(phone) {
+            font-size: 7rem;
+            line-height: 1.2;
+        }
     }
 
     &__text {
@@ -46,5 +51,50 @@
         background-image: linear-gradient(to right, #b71f24, #df2024);
         left: 50%;
         top: -2rem;
+
+        @include respond(tab-port) {
+            left: 65%;
+            top: 7rem;
+        }
     }
+}
+
+.slider.owl-carousel .owl-dots {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    left: 46%;
+    bottom: 7rem;
+
+    @include respond(phone) {
+        position: static;
+        margin: 1.5rem 0;
+    }
+}
+
+.slider.owl-carousel button.owl-dot {
+    background: transparent;
+    display: inline-block;
+    width: 1.5rem;
+    height: 1.5rem;
+    border: 2px solid #c2c2c2;
+    border-radius: 50%;
+
+    &:not(:last-child) {
+        margin-right: 2rem;
+    }
+}
+
+.slider.owl-carousel button.owl-dot.active {
+    background-color: $green;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.owl-carousel .owl-nav button.owl-prev,
+.owl-carousel .owl-nav button.owl-next {
+    display: none;
 }
