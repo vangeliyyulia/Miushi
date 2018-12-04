@@ -1,10 +1,8 @@
 .btn {
 	background-color: $orange;
-	padding: 1.8rem 2rem;
 	color: #fff;
 	text-transform: uppercase;
 	font-family: "OpenSans-Regular";
-	font-size: 1.6rem;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -13,6 +11,14 @@
 
 	&--slider {
 		width: 24.6rem;
+		font-size: 1.6rem;
+		padding: 1.8rem 2rem;
+	}
+
+	&--section-slider {
+		width: 19.3rem;
+		font-size: 1.4rem;
+		padding: 1rem 3rem;
 	}
 }
 

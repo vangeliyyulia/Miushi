@@ -1,0 +1,25 @@
+.section-title {
+    font-family: "Lemontuesday";
+    font-size: 6rem;
+    color: #32505a;
+    text-align: center;
+    padding: 0 4rem;
+    position: relative;
+
+    &::before, &::after {
+        @include pseudo;
+        @include center-top;
+        width: 11rem;
+        height: 4rem;
+    }
+
+    &::before {
+        background: url(../img/decor.png) no-repeat center center;
+        left: 35%;
+    }
+
+    &::after {
+        background: url(../img/app2.png) no-repeat center center;
+        right: 35%;
+    }
+}
