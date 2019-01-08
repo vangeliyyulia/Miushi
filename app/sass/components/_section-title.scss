@@ -11,6 +11,10 @@
         @include center-top;
         width: 11rem;
         height: 4rem;
+
+        @include respond(phone) {
+            display: none;
+        }
     }
 
     &::before {

@@ -9,10 +9,11 @@
     justify-content: space-between;
 
     &__item {
-        width: 23%;
+        width: 280px;
     }
 
     &__content {
+        width: 263px;
         display: flex;
         flex-direction: column;
         justify-content: center;
@@ -36,10 +37,10 @@
 
         & span {
             display: inline-block;
+            padding: 0 .5rem;
 
             &:not(:last-child) {
                 border-right: 1px solid #000;
-                padding: 0 1rem;
             }
         }
     }
